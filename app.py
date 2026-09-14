@@ -236,13 +236,22 @@ def status(text, kind="blue"):
 # Sidebar
 # -----------------------------
 with st.sidebar:
+    st.image("logo.png", use_container_width=True)
+
     st.markdown("""
-    <div class="brand">
-        <span class="brand-mark">BI</span>
-        <span class="brand-title">DSDM Career<br>Intelligence</span>
-        <div class="brand-sub">Strategic Human Capital Platform</div>
+    <div style="
+        font-size: 11px;
+        color: rgba(255,255,255,.75);
+        text-align: center;
+        margin-top: -8px;
+        margin-bottom: 18px;
+    ">
+        Strategic Human Capital Platform
     </div>
-    <div class="confidential">● CONFIDENTIAL — DSDM ONLY</div>
+
+    <div class="confidential">
+        ● CONFIDENTIAL — DSDM ONLY
+    </div>
     """, unsafe_allow_html=True)
 
     page = st.radio(
