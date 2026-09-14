@@ -278,7 +278,7 @@ if page == "Executive Dashboard":
     st.markdown('<div class="notice"><b>CONFIDENTIAL:</b> This dashboard is an internal DSDM prototype. All displayed records are dummy data and must not be interpreted as actual employee information.</div>', unsafe_allow_html=True)
 
     cols = st.columns(4)
-    with cols[0]: metric("Employees in Scope", "2,486", "+4.2% vs. prior cycle")
+    with cols[0]: metric("Total Employees", "2,486", "+4.2% vs. prior cycle")
     with cols[1]: metric("Talent Pool", "312", "+18 identified this cycle")
     with cols[2]: metric("Ready Now", "87", "+9.6% vs. prior cycle")
     with cols[3]: metric("Avg. Job Fit", "82.4%", "+3.1 pp vs. prior cycle")
